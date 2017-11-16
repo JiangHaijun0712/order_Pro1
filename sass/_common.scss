@@ -1,0 +1,38 @@
+body {
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+div.banner {
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+footer {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #6ac2ff;
+  .menu {
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: .52rem;
+      height: auto;
+      margin-top: .2rem;
+    }
+    span {
+      font-size: 12px;
+      color: #6ac2ff;
+      margin-top: .14rem;
+    }
+  }
+}
