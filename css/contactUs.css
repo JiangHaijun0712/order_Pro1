@@ -1,6 +1,7 @@
-body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td, menu {
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td, menu, div {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 table {
   border-collapse: collapse;
@@ -27,7 +28,7 @@ article, aside, footer, header, hgroup, nav, section, figure, figcaption {
   display: block; }
 
 code, kbd, pre, samp, tt {
-  font-family: Consolas,"Courier New", Courier, monospace; }
+  font-family: "Microsoft YaHei","Courier New", Courier, monospace; }
 
 address, cite, dfn, em, var, i {
   font-style: normal; }
@@ -155,7 +156,8 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  border-top: 1px solid #6ac2ff; }
+  border-top: 1px solid #6ac2ff;
+  background-color: #fff; }
   footer .menu {
     width: 33.3%;
     height: 100%;
@@ -171,5 +173,52 @@ footer {
       font-size: 12px;
       color: #6ac2ff;
       margin-top: .14rem; }
+
+p.notice {
+  color: #6ac2ff;
+  font-size: 10px;
+  text-align: right;
+  padding: .26rem .43rem .87rem 0; }
+
+form {
+  display: block;
+  width: 100%;
+  padding: .55rem;
+  padding-top: 0; }
+  form .lable {
+    color: #6ac2ff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 16px 0 5px  0;
+    line-height: 1; }
+    form .lable:nth-child(1) {
+      margin-top: 0; }
+  form input[type="text"], form textarea {
+    border: 1px solid #c36f03;
+    height: 26px;
+    outline: none;
+    display: block; }
+    form input[type="text"].name, form textarea.name {
+      width: 2.45rem; }
+    form input[type="text"].contact, form textarea.contact {
+      width: 3.48rem; }
+    form input[type="text"].company, form textarea.company {
+      width: 4.92rem; }
+    form input[type="text"].other, form textarea.other {
+      height: 96px;
+      width: 100%;
+      resize: none; }
+  form #submit {
+    background-color: #f95326;
+    color: #fff;
+    height: 34px;
+    width: 100%;
+    text-align: center;
+    line-height: 34px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: .32rem 0 0 0;
+    border: none;
+    letter-spacing: 8px; }
 
 /*# sourceMappingURL=contactUs.css.map */

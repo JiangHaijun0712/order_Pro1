@@ -1,2 +1,58 @@
 @import './_pub.scss';
 @import './_common.scss';
+
+p.notice {
+  color: #6ac2ff;
+  font-size: 10px;
+  text-align: right;
+  padding: .26rem .43rem .87rem 0;
+}
+form {
+  display: block;
+  width: 100%;
+  padding: .55rem;
+  padding-top: 0;
+  .lable {
+    color: #6ac2ff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 16px 0 5px  0;
+    line-height: 1;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+  input[type="text"],textarea {
+    border: 1px solid #c36f03;
+    height: 26px;
+    outline: none;
+    display: block;
+    &.name {
+      width: 2.45rem;
+    }
+    &.contact {
+      width: 3.48rem;
+    }
+    &.company {
+      width: 4.92rem;
+    }
+    &.other {
+      height: 96px;
+      width: 100%;
+      resize: none;
+    }
+  }
+  #submit {
+    background-color: #f95326;
+    color: #fff;
+    height: 34px;
+    width: 100%;
+    text-align: center;
+    line-height: 34px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: .32rem 0 0 0;
+    border: none;
+    letter-spacing: 8px;
+  }
+}

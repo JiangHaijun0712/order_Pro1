@@ -1,6 +1,7 @@
-body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td, menu {
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td, menu, div {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 table {
   border-collapse: collapse;
@@ -27,7 +28,7 @@ article, aside, footer, header, hgroup, nav, section, figure, figcaption {
   display: block; }
 
 code, kbd, pre, samp, tt {
-  font-family: Consolas,"Courier New", Courier, monospace; }
+  font-family: "Microsoft YaHei","Courier New", Courier, monospace; }
 
 address, cite, dfn, em, var, i {
   font-style: normal; }
@@ -155,7 +156,8 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  border-top: 1px solid #6ac2ff; }
+  border-top: 1px solid #6ac2ff;
+  background-color: #fff; }
   footer .menu {
     width: 33.3%;
     height: 100%;
@@ -171,5 +173,30 @@ footer {
       font-size: 12px;
       color: #6ac2ff;
       margin-top: .14rem; }
+
+.section {
+  padding: .42rem .54rem;
+  padding-bottom: 0;
+  width: 100%; }
+  .section .title {
+    color: #e8991d;
+    font-size: 16px;
+    margin-bottom: .28rem;
+    padding-left: 16px;
+    line-height: 1; }
+  .section p {
+    line-height: 1;
+    font-size: 14px;
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 14px; }
+    .section p img {
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 4px; }
 
 /*# sourceMappingURL=moreTechnology.css.map */

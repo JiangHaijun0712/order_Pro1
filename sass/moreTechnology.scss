@@ -1,2 +1,30 @@
 @import './_pub.scss';
 @import './_common.scss';
+.section {
+  padding: .42rem .54rem;
+  padding-bottom: 0;
+  width: 100%;
+  .title {
+    color: #e8991d;
+    font-size: 16px;
+    margin-bottom: .28rem;
+    padding-left: 16px;
+    line-height: 1;
+  }
+  p {
+    line-height: 1;
+    font-size: 14px;
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 14px;
+    img {
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 4px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
-body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td, menu {
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td, menu, div {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 table {
   border-collapse: collapse;
@@ -27,7 +28,7 @@ article, aside, footer, header, hgroup, nav, section, figure, figcaption {
   display: block; }
 
 code, kbd, pre, samp, tt {
-  font-family: Consolas,"Courier New", Courier, monospace; }
+  font-family: "Microsoft YaHei","Courier New", Courier, monospace; }
 
 address, cite, dfn, em, var, i {
   font-style: normal; }
@@ -155,7 +156,8 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  border-top: 1px solid #6ac2ff; }
+  border-top: 1px solid #6ac2ff;
+  background-color: #fff; }
   footer .menu {
     width: 33.3%;
     height: 100%;
@@ -171,5 +173,47 @@ footer {
       font-size: 12px;
       color: #6ac2ff;
       margin-top: .14rem; }
+
+h3.title {
+  color: #e8991d;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 29px;
+  margin-bottom: 33px;
+  line-height: 1; }
+
+.section {
+  padding: 22px;
+  padding-top: 0;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #1c1c1c; }
+  .section .min-title {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px; }
+    .section .min-title:nth-child(1) {
+      margin-top: 0; }
+  .section .double-img-box {
+    margin: 5px 0; }
+    .section .double-img-box .img-box {
+      display: inline-block;
+      width: 49.5%;
+      text-align: center; }
+      .section .double-img-box .img-box:nth-child(2) {
+        float: right; }
+      .section .double-img-box .img-box img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px; }
+  .section .only-img-box {
+    margin: 5px 0;
+    text-align: center; }
+    .section .only-img-box img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 5px; }
 
 /*# sourceMappingURL=aboutUs.css.map */

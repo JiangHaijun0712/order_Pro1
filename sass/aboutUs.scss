@@ -1,2 +1,52 @@
 @import './_pub.scss';
 @import './_common.scss';
+h3.title {
+  color: #e8991d;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 29px;
+  margin-bottom: 33px;
+  line-height: 1;
+}
+.section {
+  padding: 22px;
+  padding-top: 0;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #1c1c1c;
+  .min-title {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+  .double-img-box {
+    margin: 5px 0;
+    .img-box {
+      display: inline-block;
+      width: 49.5%;
+      text-align: center;
+      &:nth-child(2) {
+        float: right;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .only-img-box {
+    margin: 5px 0;
+    text-align: center;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 5px;
+    }
+  }
+}
