@@ -22,7 +22,7 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
     <img src="../image/banner1.png">
   </div>
   <p class="notice">请准确填写信息、我们保障您的个人信息。</p>
-  <form action="">
+  <form class="main" action="">
     <p class="lable">您的姓名：</p>
     <input type="text" name="name" class="name">
     <p class="lable">您的联系方式：</p>
@@ -33,6 +33,18 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
     <textarea name="other" class="other" cols="30" rows="10"></textarea>
     <input type="submit" id="submit" value="提交">
   </form>
+  <div class="poptip">
+    <div class="tip-box">
+      <form action="" class="validate">
+        <div class="code">
+          <input type="text" placeholder="请输入验证码">
+          <a href="javascript:;" id="send-code">获取验证码</a>
+        </div>
+        <input type="password" id="password" placeholder="请输入密码">
+        <input type="submit" value="确认">
+      </form>
+    </div>
+  </div>
   <footer>
     <div class="menu">
       <a href="javascript:;">
@@ -54,4 +66,29 @@ document.documentElement.style.fontSize = document.documentElement.clientWidth /
     </div>
   </footer>
 </body>
+<script>
+  $(function () {
+    var count = 300; // 设置倒数秒数
+    var num = count; // 显示的秒数
+    $("#send-code").on('click',function () {
+      if ($(this).hasClass('disable')) {
+        return ;
+      }
+      $(this).addClass('disable');
+      counting();
+    });
+    function counting () {
+      $("#send-code").html(num + " s");
+      if (num > 0) {
+        num--;
+        setTimeout(function () {
+          counting();
+        }, 1000);
+      } else {
+        $("#send-code").removeClass('disable').html("获取验证码");
+        num = count;
+      }
+    }
+  });
+</script>
 </html>

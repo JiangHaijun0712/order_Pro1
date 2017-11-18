@@ -180,35 +180,35 @@ p.notice {
   text-align: right;
   padding: .26rem .43rem .87rem 0; }
 
-form {
+form.main {
   display: block;
   width: 100%;
   padding: .55rem;
   padding-top: 0; }
-  form .lable {
+  form.main .lable {
     color: #6ac2ff;
     font-size: 14px;
     font-weight: 600;
     margin: 16px 0 5px  0;
     line-height: 1; }
-    form .lable:nth-child(1) {
+    form.main .lable:nth-child(1) {
       margin-top: 0; }
-  form input[type="text"], form textarea {
+  form.main input[type="text"], form.main textarea {
     border: 1px solid #c36f03;
     height: 26px;
     outline: none;
     display: block; }
-    form input[type="text"].name, form textarea.name {
+    form.main input[type="text"].name, form.main textarea.name {
       width: 2.45rem; }
-    form input[type="text"].contact, form textarea.contact {
+    form.main input[type="text"].contact, form.main textarea.contact {
       width: 3.48rem; }
-    form input[type="text"].company, form textarea.company {
+    form.main input[type="text"].company, form.main textarea.company {
       width: 4.92rem; }
-    form input[type="text"].other, form textarea.other {
+    form.main input[type="text"].other, form.main textarea.other {
       height: 96px;
       width: 100%;
       resize: none; }
-  form #submit {
+  form.main #submit {
     background-color: #f95326;
     color: #fff;
     height: 34px;
@@ -220,5 +220,67 @@ form {
     margin: .32rem 0 0 0;
     border: none;
     letter-spacing: 8px; }
+
+.poptip {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 14px; }
+  .poptip .tip-box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -60px;
+    padding: 0 .55rem; }
+  .poptip form.validate {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff; }
+    .poptip form.validate div.code, .poptip form.validate #password, .poptip form.validate input[type='submit'] {
+      width: 100%;
+      height: 26px;
+      margin-bottom: 14px;
+      line-height: 26px; }
+    .poptip form.validate input {
+      outline: none;
+      border: 1px solid #c36f03;
+      display: block; }
+    .poptip form.validate div.code {
+      padding-right: 100px;
+      position: relative; }
+      .poptip form.validate div.code input {
+        width: 100%;
+        height: 100%;
+        outline: none; }
+      .poptip form.validate div.code a {
+        display: block;
+        height: 100%;
+        width: 95px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: center;
+        line-height: 26px;
+        background-color: #f95326;
+        color: #fff;
+        text-align: center; }
+        .poptip form.validate div.code a.disable {
+          background-color: #bbb; }
+    .poptip form.validate input[type='submit'] {
+      margin-bottom: 0;
+      background-color: #f95326;
+      color: #fff;
+      letter-spacing: 8px;
+      font-weight: 600;
+      border: none;
+      text-align: center;
+      display: block;
+      font-size: 15px; }
 
 /*# sourceMappingURL=contactUs.css.map */
